@@ -11,6 +11,12 @@
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
         "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
         "type": "dashboard"
       }
     ]
@@ -19,14 +25,13 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 8,
+  "id": 6,
   "links": [],
   "panels": [
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -38,8 +43,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -61,7 +65,9 @@
         "orientation": "auto",
         "percentChangeColorMode": "standard",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
@@ -69,12 +75,12 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -93,9 +99,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -107,8 +112,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -130,7 +134,9 @@
         "orientation": "auto",
         "percentChangeColorMode": "standard",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
@@ -138,12 +144,12 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -162,9 +168,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -176,8 +181,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -199,7 +203,9 @@
         "orientation": "auto",
         "percentChangeColorMode": "standard",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
@@ -207,12 +213,12 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -231,9 +237,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -245,8 +250,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "#EAB839",
@@ -270,7 +274,9 @@
         "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
@@ -278,12 +284,12 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -302,9 +308,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -316,8 +321,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -338,7 +342,9 @@
         "orientation": "auto",
         "percentChangeColorMode": "standard",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
@@ -346,12 +352,12 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -371,9 +377,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -385,8 +390,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -407,7 +411,9 @@
         "orientation": "auto",
         "percentChangeColorMode": "standard",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
@@ -415,12 +421,12 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -440,9 +446,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -454,8 +459,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -477,7 +481,9 @@
         "orientation": "auto",
         "percentChangeColorMode": "standard",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
@@ -485,12 +491,12 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -510,9 +516,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -545,20 +550,24 @@
         },
         "pieType": "pie",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -577,9 +586,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -612,20 +620,24 @@
         },
         "pieType": "pie",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -644,9 +656,8 @@
     },
     {
       "datasource": {
-        "default": false,
         "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
+        "uid": "${promsource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -680,20 +691,24 @@
         },
         "pieType": "pie",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": false
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "11.6.0",
       "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
+            "uid": "${promsource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -711,10 +726,29 @@
       "type": "piechart"
     }
   ],
-  "schemaVersion": 39,
-  "tags": [],
+  "preload": false,
+  "refresh": "",
+  "schemaVersion": 41,
+  "tags": [
+    "immich"
+  ],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "current": {
+          "text": "prometheus",
+          "value": "cejbdvyojumf4c"
+        },
+        "description": "Choose from the available Prometheus data sources.",
+        "label": "Prometheus Source",
+        "name": "promsource",
+        "options": [],
+        "query": "prometheus",
+        "refresh": 1,
+        "regex": "",
+        "type": "datasource"
+      }
+    ]
   },
   "time": {
     "from": "now-15m",
@@ -724,6 +758,6 @@
   "timezone": "browser",
   "title": "Immich",
   "uid": "ce16ypqb5xywwa",
-  "version": 2,
-  "weekStart": ""
+  "version": 4,
+  "weekStart": "monday"
 }
